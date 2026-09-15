@@ -33,18 +33,20 @@ After running ./install.sh, open your local credentials file:
 nano ~/.config/autologin/credentials.env
 ```
 ## Gateway credentials & endpoint
-PORTAL_USER="your_username"
-PORTAL_PASS="your_password"
-PORTAL_URL="[https://10.1.0.1:8090/httpclient.html](https://10.1.0.1:8090/httpclient.html)"
+PORTAL_USER="your_username"  
+PORTAL_PASS="your_password"  
+PORTAL_URL="[https://10.1.0.1:8090/httpclient.html](https://10.1.0.1:8090/httpclient.html)"  
 
 Space-separated list of trusted SSIDs (leave blank to bypass check)
 ALLOWED_SSIDS="Campus-WiFi BITS-Pilani Hostel-5G"
 
 ## Optional: Instant Wi-Fi Reconnect Hook
-By default, the systemd user watchdog verifies connection status every 5 minutes. If you want authentication to fire instantly when your wifi connects - run:
+By default, the systemd user watchdog verifies connection status every 5 minutes. If you want authentication to fire instantly when your wifi connects
+```bash
 sudo install -m 0755 dispatcher/99-autologin.sh /etc/NetworkManager/dispatcher.d/
+```
 
-# Verification 
+## Verification 
 Check the status of the background timer:
 ```bash
 systemctl --user status autologin.timer
