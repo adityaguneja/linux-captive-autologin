@@ -32,7 +32,7 @@ After running ./install.sh, open your local credentials file:
 ```bash
 nano ~/.config/autologin/credentials.env
 ```
-# Gateway credentials & endpoint
+## Gateway credentials & endpoint
 PORTAL_USER="your_username"
 PORTAL_PASS="your_password"
 PORTAL_URL="[https://10.1.0.1:8090/httpclient.html](https://10.1.0.1:8090/httpclient.html)"
