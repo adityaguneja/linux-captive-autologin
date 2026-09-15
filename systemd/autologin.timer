@@ -1,0 +1,10 @@
+[Unit]
+Description=Periodic Captive Portal Keep-Alive Timer
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=5min
+AccuracySec=10s
+
+[Install]
+WantedBy=timers.target

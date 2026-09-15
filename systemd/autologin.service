@@ -1,0 +1,10 @@
+[Unit]
+Description=Captive Portal Keep-Alive Ping & Auto-Login
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/autologin
+
+[Install]
+WantedBy=default.target

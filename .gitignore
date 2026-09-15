@@ -1,0 +1,10 @@
+*.env
+.env*
+!*example.env
+credentials/
+
+#system files
+*.log
+.DS_Store
+*~
+*.swp
