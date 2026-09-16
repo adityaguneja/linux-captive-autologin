@@ -17,7 +17,7 @@ Works on any Linux distribution with `bash`, `curl`, and `NetworkManager`.
 
 ```bash
 # 1. Clone the repository
-git clone [https://github.com/](https://github.com/)<your-username>/linux-captive-autologin.git
+git clone [https://github.com/](https://github.com/)<adityaguneja>/linux-captive-autologin.git
 
 # 2. Enter the directory
 cd linux-captive-autologin
